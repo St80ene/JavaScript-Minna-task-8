@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./asset/css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Sign Up</h2>
+      <form class="signForm" id="signUp" name="signUp" action="">
+        <div class="row100">
+          <div class="col">
+            <div class="form">
+              <input
+                type="text"
+                name="fname"
+                pattern="/[a-z]/gi"
+                title="Letters only, please."
+                id="fname"
+                required="required"
+              />
+              <span class="text">First name</span>
+              <span class="line"></span>
+              <small></small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form">
+              <input type="text" name="lname" id="lname" required="required" />
+              <span class="text">Last name</span>
+              <span class="line"></span>
+              <small></small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form">
+              <input type="text" name="email" id="email" required="required" />
+              <span class="text">email</span>
+              <span class="line"></span>
+              <small></small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form">
+              <input
+                type="text"
+                name="password"
+                id="password"
+                required="required"
+              />
+              <span class="text">Password</span>
+              <span class="line"></span>
+              <small></small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form">
+              <input
+                type="text"
+                name="cpassword"
+                id="cpassword"
+                required="required"
+              />
+              <span class="text">Confirm Password</span>
+              <span class="line"></span>
+              <small></small>
+            </div>
+          </div>
+          <input type="submit" value="Sign Up" />
+          <div class="terms">
+            <input type="checkbox" name="" id="" />
+            <p>
+              I accept the <a href="#">Terms of use</a> &
+              <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+          <p class="link">
+            Already have an account? To login, click
+            <a href="./login.html">here</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="./asset/js/index.js"></script>
+</html>
